@@ -20,3 +20,6 @@ bash deploy.sh
 
 ## View Live Dashboard
 - [Live Dashboard](https://Cho0pper.github.io/DevOps-Dashboard/)
+
+- ## License
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
