@@ -6,9 +6,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> DevOps Dashboard Demonstration</h1>
+    <h1>DevOps Dashboard Demonstration</h1>
+
     <div id="logs">
-        <!-- Logs or metrics will be displayed here -->
+        <h2>Deployment Logs</h2>
+        <pre id="log-content">Loading logs...</pre>
     </div>
+
+    <script>
+        fetch('Logs/deploy.log')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('log-content').textContent = data;
+            })
+            .catch(error => {
+                document.getElementById('log-content').textContent = "No logs found.";
+                console.error("Error loading logs:", error);
+            });
+    </script>
+
 </body>
 </html>
