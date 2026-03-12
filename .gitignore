@@ -1,3 +1,2 @@
-Logs/
-*.log
 nohup.out
+Logs/deploy.log
